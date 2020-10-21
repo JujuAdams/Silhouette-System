@@ -1,0 +1,1 @@
+silhouette_controller_create(70); //We found that "a little bigger than the size of the biggest blocker" worked well
