@@ -1,8 +1,10 @@
 /// @param colour
+/// @param drawFunction
 
-function silhouette_add(_colour)
+function silhouette_add(_colour, _function)
 {
     silhouette_colour = _colour;
+    silhouette_draw_function = _function;
     
     with(obj_silhouette_controller)
     {

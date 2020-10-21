@@ -103,12 +103,12 @@ function silhouette_controller_draw()
         }
         
         gpu_set_blendmode_ext(bm_zero, bm_src_alpha);
-        with(_silh_instance) draw_self();
+        with(_silh_instance) silhouette_draw_function();
         
         gpu_set_colorwriteenable(true, true, true, false);
         gpu_set_fog(true, _colour, 0, 0);
         gpu_set_blendmode_ext(bm_dest_alpha, bm_inv_dest_alpha);
-        with(_silh_instance) draw_self();
+        with(_silh_instance) silhouette_draw_function();
         
         --_i;
     }

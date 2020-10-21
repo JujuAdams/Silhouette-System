@@ -1,1 +1,1 @@
-silhouette_add(c_white);
+silhouette_add(c_white, draw_self);
